@@ -6,11 +6,11 @@ function addBox() {
     const parcelsDiv = document.getElementById('parcels');
     const div = document.createElement('div');
     div.innerHTML = `
-        <input type="number" min="1" placeholder="Qty" class="parcel-quantity">
-        <input type="number" min="1" placeholder="L (cm)" class="parcel-dimension">
-        <input type="number" min="1" placeholder="W (cm)" class="parcel-dimension">
-        <input type="number" min="1" placeholder="H (cm)" class="parcel-dimension">
-        <button class="remove-box" onclick="removeBox(this)">Remove</button>
+        <input type="number" min="1" placeholder="수량" class="parcel-quantity">
+        <input type="number" min="1" placeholder="길이 (cm)" class="parcel-dimension">
+        <input type="number" min="1" placeholder="너비 (cm)" class="parcel-dimension">
+        <input type="number" min="1" placeholder="높이 (cm)" class="parcel-dimension">
+        <button class="remove-box" onclick="removeBox(this)">박스 제거</button>
     `;
     parcelsDiv.appendChild(div);
 }
