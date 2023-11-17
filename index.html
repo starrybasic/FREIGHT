@@ -1,21 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko-kr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volumetric Weight Calculator</title>
+    <title>항공 화물 부피 중량 계산기</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Volumetric Weight Calculator</h2>
+    <h2>항공 화물 부피 중량 계산기</h2>
     <div id="parcel-form">
         <div id="parcels">
             <!-- Parcel inputs will be added here -->
         </div>
-        <button type="button" class="add-box" onclick="addBox()">Add Box</button>
-        <button type="button" onclick="calculateWeight()">Calculate Weight</button>
-        <div id="totalWeight">Total Volumetric Weight: 0 kg</div>
+        <button type="button" class="add-box" onclick="addBox()">박스 추가</button>
+        <button type="button" class="calculate-btn" onclick="calculateWeight()">계산하기!</button>
+        <div id="totalWeight">총 부피 중량: 0 kg</div>
     </div>
+    <footer>
+        항공 견적 및 배너 광고 문의: <a href="mailto:swjeon@k2logics.co.kr">swjeon@k2logics.co.kr</a>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
