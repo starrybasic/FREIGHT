@@ -6,8 +6,8 @@ body {
 
 #parcel-form {
     width: 90%;
-    max-width: 500px;
-    margin: auto;
+    max-width: 550px;
+    margin-left: 20px; /* Align to the left with some margin */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -16,7 +16,6 @@ body {
 
 #parcels div {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -25,13 +24,13 @@ input[type=number] {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin-right: 3px; /* Ensure there is space between inputs */
+    margin-right: 5px; /* Reduced gap between inputs */
 }
 
 .parcel-quantity,
 .parcel-dimension {
-    flex: 1; /* Allows input to grow and shrink as needed */
-    max-width: 13%; /* Limit the width of each input to less than a quarter of the container's width */
+    flex: 1;
+    max-width: 13%;
 }
 
 button {
@@ -47,6 +46,11 @@ button {
     color: white;
 }
 
+.calculate-btn {
+    background-color: #87CEEB; /* Sky blue color */
+    color: white;
+}
+
 .remove-box {
     background-color: #dc3545;
     color: white;
@@ -56,4 +60,13 @@ button {
     margin-top: 20px;
     font-size: 1.2em;
     color: #007bff;
+    font-weight: bold; /* Make the total weight bold */
+}
+
+footer {
+    text-align: left;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #666;
 }
