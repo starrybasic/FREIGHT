@@ -32,5 +32,5 @@ function calculateWeight() {
         const weight = (volume / 6000) * qty;
         totalVolumetricWeight += weight;
     });
-    document.getElementById('totalWeight').textContent = `Total Volumetric Weight: ${totalVolumetricWeight.toFixed(2)} kg`;
+    document.getElementById('totalWeight').textContent = `총 부피 중량: ${totalVolumetricWeight.toFixed(2)} kg`;
 }
